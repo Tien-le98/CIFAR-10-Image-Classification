@@ -56,7 +56,7 @@ __Experiment 4__
 
 The last experiments was carried out by training this Resnet-50 architecture with various values of chosen hyperparameter, to define the optimal hyperparamenters which can lead to better model’s performance. There were 7 combinations of hyperparameters which were tuned in this experiment, keeping other parameters remain unchanged, as shown in the below table. 
 
-<a href="url"><img src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/resnet_tuning.png" align="right" height="300" width="300" ></a>
+<a href="url"><img src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/resnet_tuning.png" align="right" height="300" width="350" ></a>
 
 Resnet-50 architecture obtained high validation accuracy score, regardless of different combinations of activation function and optimizer. In general, their validation accuracy scores were about 80% or above. The best model is the Resnet-50 architecture with SELU activation function, SGD optimizer, and its learning rate is 0.001. The below figure showed changes in training loss, training accuracy, validation loss, and validation accuracy of this best model through each epoch. In addition, this model converged after 17 epochs with the training accuracy score of 99.56% and the validation accuracy score of 91.70%, which was just slightly higher than the figure for the original Resnet-50 using ReLU and SGD optimizer. However, in comparison with the baseline model, this best model’s validation accuracy score was nearly 25% higher than the figure for the baseline CNN. In addition, the difference between training accuracy score and validation accuracy score of this best model was only about 8%, which was 6% lower than the figure for the baseline model. Several reasons that can lead to this improvement, as belows: 
 
@@ -69,8 +69,8 @@ Resnet-50 architecture obtained high validation accuracy score, regardless of di
 This best Resnet-50 was used to evaluate model’s performance on the testing dataset. In particular, its testing loss was about 0.258, and its accuracy score and precision score was around 91.3%. In terms of individual classes, each label was predicted accurately more than 90% of its number of images, except for label 2, 3 and 5 since they were only predicted precisely about 87%, 81% and 85% respectively, as shown in the below figure. In addition, in terms of predictions, around 90% of predicted labels were the same with true labels, except for predictions of label 3 and 5, since only 82% labels predicted as 3 were correct, and 88% labels predicted as 5 were precise. 
 
 <p align="center" width="100%">
-    <img width="30%" src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/confmat_truelabel.png">
-    <img width="30%" src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/confmat_predictedlabel">
+    <img width="40%" src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/confmat_truelabel.png">
+    <img width="40%" src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/confmat_predictedlabel.png">
 </p>
 
 Other assessed metrics for each class were also shown in the below table.
