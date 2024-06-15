@@ -37,20 +37,22 @@ A baseline CNN model was built with 1 input layer, 1 output layer with 10 neuron
 + Because the accuracy score of models trained on standard scaled dataset was the highest among other methods, the pre-processed training data using Standard scaling method was used to train other CNN architectures and analyze further.
 
 __Experiment 2__
+
 The second experiment was implemented to find out the CNN architecture that achieved highest accuracy score for this image classification task, using the CIFAR-10, among several different architectures. Architectures considered in this paper are VGG16, GoogLeNet, GoogLeNet with auxiliary classifiers, InceptionV3, InceptionV3 with fine tuning, and Resnet50. These architectures employed Sparse categorical crossentropy loss function, SGD optimizer with 0.001, and batch size of 100. Early stopping method also employed to mitigate potential overfitting problem. The output layer of these architecture used Softmax function for classification since classes were encoded as numbers from 0 to 9. All these architectures were set to run through 50 epochs. The performance of all architectures on the training dataset and validation dataset were shown in the below table.
 
-<a href="url"><img src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/CNN" align="center"></a>
+<a href="url"><img src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/CNN.png" align="center"></a>
 
 After comparing model’s performance of different CNN architectures on the above table, Resnet-50 (with Relu activation function and SGD optimizer) obtained the highest accuracy score on both the training dataset (above 99%) and the validation dataset (nearly 92%), hence, data augmentation methods were considered in this Resnet-50 architecture. 
 
 __Experiment 3__
+
 The third experiment was executed by applying data augmentation methods on the Resnet50 architecture to figure out if these methods can improve model’s performance. Flipping method was used to flip the input images horizontally and vertically. Rotation method was employed to rotate the input images with a factor of 0.2 while contrast method modifies the difference between the darkest and brightest areas in the input images with a factor of 0.2. The below table shows the performance of this architecture, with different methods of data augmentation. 
 
-<a href="url"><img src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/resnet50-dataaugmentation" align="center"></a>
+<a href="url"><img src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/resnet50-dataaugmentation.png" align="center"></a>
 
 It can be seen tha data augmentation techniques can perform better on Resnet-50 architecture than the baseline model since this Resnet-50 is more complicated and deeper with the greater number of layers and parameters. These methods can mitigate the overfitting problem, which was shown through the decrease in the difference between training accuracy score and testing accuracy score. This gap of the original Resnet-50 architecture was nearly 7%, while the figure for Resnet-50 with random flip was just about 5%. However, using many data augmentation techniques was not always appropriate since including all methods, such as random flip, random rotation and random contrast methods in this Resnet-50, reduced the model’s performance significantly, with the training accuracy score of only 58.71% and the validation accuracy score of only 23.16%. In addition, through this experiment, the best architecture yielding the highest accuracy score on validation dataset (92.30%) was Resnet-50 with random flip method, its graph of training loss, tranining accuracy, validation loss and validation accuracy was shown in the below figure. 
 
-<a href="url"><img src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/resnet-augmentation" align="center"></a>
+<a href="url"><img src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/resnet-augmentation.png" align="center"></a>
 
 However, while validation accuracy score of this Resnet-50 was only 0.7% higher than the figure for the original Resnet-50, it required much longer time to converge. Therefore, the Resnet-50 without data augmentation was still selected to implement the experiment of tuning hyperparameters.
 
