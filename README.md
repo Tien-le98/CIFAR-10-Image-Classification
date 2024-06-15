@@ -69,13 +69,13 @@ Resnet-50 architecture obtained high validation accuracy score, regardless of di
 This best Resnet-50 was used to evaluate model’s performance on the testing dataset. In particular, its testing loss was about 0.258, and its accuracy score and precision score was around 91.3%. In terms of individual classes, each label was predicted accurately more than 90% of its number of images, except for label 2, 3 and 5 since they were only predicted precisely about 87%, 81% and 85% respectively, as shown in the below figure. In addition, in terms of predictions, around 90% of predicted labels were the same with true labels, except for predictions of label 3 and 5, since only 82% labels predicted as 3 were correct, and 88% labels predicted as 5 were precise. 
 
 <p align="center" width="100%">
-    <img width="40%" src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/confmat_truelabel.png">
-    <img width="40%" src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/confmat_predictedlabel.png">
+    <img width="45%" src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/confmat_truelabel.png">
+    <img width="45%" src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/confmat_predictedlabel.png">
 </p>
 
 Other assessed metrics for each class were also shown in the below table.
 
-<a href="url"><img src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/resnet_tuning_plot.png" align="center" height="400" width="700"></a>
+<a href="url"><img src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/othermetrics.png" align="right"></a>
 
 
 
