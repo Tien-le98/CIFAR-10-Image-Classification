@@ -48,15 +48,16 @@ __Experiment 3__
 
 The third experiment was executed by applying data augmentation methods on the Resnet50 architecture to figure out if these methods can improve model’s performance. Flipping method was used to flip the input images horizontally and vertically. Rotation method was employed to rotate the input images with a factor of 0.2 while contrast method modifies the difference between the darkest and brightest areas in the input images with a factor of 0.2. The below table shows the performance of this architecture, with different methods of data augmentation. 
 
-<a href="url"><img src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/resnet50-dataaugmentation.png" align="center"></a>
+<a href="url"><img src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/resnet50_dataaugmentation.png" align="center"></a>
 
 It can be seen tha data augmentation techniques can perform better on Resnet-50 architecture than the baseline model since this Resnet-50 is more complicated and deeper with the greater number of layers and parameters. These methods can mitigate the overfitting problem, which was shown through the decrease in the difference between training accuracy score and testing accuracy score. This gap of the original Resnet-50 architecture was nearly 7%, while the figure for Resnet-50 with random flip was just about 5%. However, using many data augmentation techniques was not always appropriate since including all methods, such as random flip, random rotation and random contrast methods in this Resnet-50, reduced the model’s performance significantly, with the training accuracy score of only 58.71% and the validation accuracy score of only 23.16%. In addition, through this experiment, the best architecture yielding the highest accuracy score on validation dataset (92.30%) was Resnet-50 with random flip method, its graph of training loss, tranining accuracy, validation loss and validation accuracy was shown in the below figure. 
 
-<a href="url"><img src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/resnet-augmentation.png" align="center"></a>
+<a href="url"><img src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/resnet_augmentation.png" align="center"></a>
 
 However, while validation accuracy score of this Resnet-50 was only 0.7% higher than the figure for the original Resnet-50, it required much longer time to converge. Therefore, the Resnet-50 without data augmentation was still selected to implement the experiment of tuning hyperparameters.
 
 __Experiment 4__
+
 The last experiments was carried out by training the best CNN architecture with various values of chosen hyperparameter, to define the optimal hyperparamenters which can lead to better model’s performance.
 
 
