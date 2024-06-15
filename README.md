@@ -77,7 +77,9 @@ Other assessed metrics for each class were also shown in the below table.
 
 <a href="url"><img src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/othermetrics.png" align="left" width = "350" height = "500"></a>
 
+## Conclusion
 
-
-
-
+Through results of these experiments, there were several main points as belows:
++ Preprocessed data steps are important in improving model’s performance. In particular, Standard scaling method can improve model’s performance better than other pre-processing methods.
++ Although data augmentation techniques can have positive effects on model’s performance, if the model does not have a large number of layers, these techniques can make it performs worse. It was shown through the decreased accuracy score of the baseline CNN model when data augmentation methods were employed. On the contrary, if the neural network is deeper, these data augmentation techniques can promote its performance and mitigate overfitting problem, leading to higher accuracy scores, which was shown in the performance of Resnet-50 architecture when applying different data augmentation methods. However, choosing appropriate number and type of data augmentation methods should be considered thoroughly since employing many techniques can lead to worse model’s performance.
++ Among different architectures which are appropriate in image classification, Resnet-50 were seen as the best architecture, achieving the highest accuracy score on the training dataset and the validation dataset. After tuning hyperparameters, the Resnet-50 with SGD optimizer, and SELU activation function obtained the highest accuracy score on the validation dataset because SELU activation function can alleviate vanishing gradient, and non-zero mean problems. Therefore, hyperparameters can affect model’s performance, tuning hyperparameters steps can contribute significantly in choosing the best model, which can result in better overall accuracy, meaning that better model’s performance.
