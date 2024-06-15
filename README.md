@@ -18,7 +18,7 @@ The CIFAR-10 dataset was downloaded from [https://www.cs.toronto.edu/ ̃kriz/cif
 |3|cat|8|ship|
 |4|deer|9|truck|
 
-<a href="url"><img src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/image_label.png" align="center" height="300" width="700" ></a>
+<a href="url"><img src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/image_label.png" align="center" ></a>
 
 This CIFAR-10 dataset was employed to perform data cleaning, data pre-processing, EDA, and data splitting before applying CNN models. Besides, various data augmentation methods for images such as flipping, rotation, and contrast were also utilised. In addition, many CNN architectures were applied on the dataset, including Visual Geometry Group (VGG16), GoogLeNet, InceptionV3, and ResNet-50.
 
