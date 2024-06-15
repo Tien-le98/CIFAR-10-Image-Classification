@@ -11,9 +11,15 @@ Image classification are becoming more important in various industry fields. For
 
 ## Experiments
 The CIFAR-10 dataset was downloaded from [https://www.cs.toronto.edu/ ̃kriz/cifar.html/, it comprises 60000 32x32x3 images, meaning that each image has 1024 pixels, along with three channels for red, green, and blue (RGB). The first layer of 1024 entries is the red channel, the second layer of 1024 entries represents for the green channel, and the last layer of 1024 entries represents for the blue channel. Among these images, 50000 images were used for training models, stored in 5 training batches, and 1 testing batch included 10000 images. Both training and testing dataset included 3072 columns, representing for 3072 image’s pixels, and 1 column showing image’s labels. Ten classes comprised in this dataset are vehicles such as airplane, automobile, ship, truck, and animals such as bird, cat, deer, dog, frog, and horse. Each class had 10000 images, their respective labels were shown in the below table, and their images were also shown in the below figure.
-|Label|Class|
-|:--|:--|
-|0|airplane|
+|Label|Class|Label|Class|
+|:--|:--|:--|:--| 
+|0|airplane|5|dog|
+|1|automobile|6|frog|
+|2|bird|7|horse|
+|3|cat|8|ship|
+|4|deer|9|truck|
+
+
 
 
 
