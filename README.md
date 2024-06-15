@@ -73,11 +73,6 @@ This best Resnet-50 was used to evaluate model’s performance on the testing da
     <img width="49%" src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/confmat_predictedlabel.png">
 </p>
 
-Other assessed metrics for each class were also shown in the below table.
-
-<a href="url"><img src="https://github.com/Tien-le98/CIFAR-10-Image-Classification/blob/main/othermetrics.png" align="left" width = "350" height = "500"></a>
-
-
 ## Conclusion
 
 Through results of these experiments, there were several main points as belows:
