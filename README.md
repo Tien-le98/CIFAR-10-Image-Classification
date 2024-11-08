@@ -1,6 +1,6 @@
 # CIFAR-10 Image Classification
 
-_Author: Clara Le_
+_Author: Pham Thuy Tien (Clara) Le_
 
 _Date: 31/10/2023_
 
